@@ -17,7 +17,8 @@ jobs:
         run: npm run build
         working-directory: ./react-todo-list-app
       - name: Deploy
+        # https://github.com/JamesIves/github-pages-deploy-action : Automatically deploy your project to GitHub Pages with GitHub Actions.
         uses: JamesIves/github-pages-deploy-action@4.1.5
         with:
-          branch: todo-list-react
+          branch: main
           folder: react-todo-list-app/build
