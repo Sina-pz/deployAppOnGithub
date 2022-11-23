@@ -1,4 +1,4 @@
-name: Deploy TODO List
+name: Deploy TODO List:v2
 on:
   push:
     branches:
@@ -20,5 +20,5 @@ jobs:
         # https://github.com/JamesIves/github-pages-deploy-action : Automatically deploy your project to GitHub Pages with GitHub Actions.
         uses: JamesIves/github-pages-deploy-action@4.1.5
         with:
-          branch: main
+          branch: todo-list-react
           folder: react-todo-list-app/build
